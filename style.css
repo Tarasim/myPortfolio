@@ -1,0 +1,517 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   overflow:auto ;
+    font-family: 'Orbitron', sans-serif;
+    list-style: none;
+    letter-spacing: 2px;
+}
+
+.img1 {
+    max-width:100%;
+    max-height: 100%;
+
+
+}
+.top {
+    position: relative;
+}
+h2 {
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    font-size: 4.5em;
+    color: white;
+    text-shadow: 1px 3px 2px rgb(7, 110, 93);
+    animation: opa1 2.6s linear alternate;
+    
+}
+@keyframes opa1 {
+    0% {
+       
+        opacity: 0;
+    }
+    45% {
+        opacity: 0.1;
+    }
+}
+.icon-menu {
+    position: fixed;
+    color: white;
+    font-size: 3em;
+    z-index: 2;
+    top: 3%;
+    left: 95%;
+    text-shadow: 1px 3px 2px rgb(7, 110, 93);
+
+}
+.icon-bank {
+    font-size: 4em;
+}
+.icon-bank:hover {
+    color: rgb(238, 197, 15);
+}
+.startButton {
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    font-size: 1em;
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(10, 90, 57);
+    box-shadow: 0;
+    width: 10%;
+    height: 50px;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .4s;
+}
+.startButton:hover {
+    box-shadow: 0px 0px 15px 5px rgb(252, 252, 252);
+    font-size: 20px;
+    color: rgb(230, 209, 26)
+}
+nav {
+    
+    position:absolute;
+    background-color:white;
+    width: 15%;
+    height: 950px;
+    top: 0;
+    left: -15%;
+    transition: .5s;
+    z-index:5;
+   
+
+}
+ul {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+     
+}
+li {
+    color: black;
+    font-size: 1.5em;
+    cursor:pointer;
+    transition: .4s;
+    padding: 15px;
+  
+}
+li:hover {
+    color:rgb(224, 192, 12);
+    border-left: 2px solid orange;
+}
+.showNav {
+    left: 0;
+    position: fixed;
+}
+
+
+
+
+
+
+main {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 2em;
+    color: rgba(0, 0, 0, 0.959);
+}
+.infoDivs {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+}
+.firstInfo, .secondInfo, .thirdInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 45vh;
+    height: 45vh;
+    transition: .4s;
+    background-color: gray;
+    color: rgb(199, 199, 199)
+   
+    
+}
+.firstInfo:hover {
+    background-color: rgb(248, 141, 0);
+    color: white;
+
+}
+.secondInfo:hover {
+    background-color: rgb(201, 57, 57);
+}
+.thirdInfo:hover {
+    background-color: rgb(19, 116, 19);
+}
+.icon-chat, .icon-gitlab, .icon-mail {
+    font-size: 2.5em;
+    color: white;
+}
+
+
+
+
+.portraits{
+    display: flex;
+    background-color: rgb(6, 36, 61);
+    width: 100%;
+    height: 1000px;
+    justify-content: space-around;
+    align-items: center;
+  
+}
+.gallery1 {
+    overflow:hidden;
+    position: relative;
+    width: 45%;
+    height: 70%;
+}
+.art1 {
+ position: absolute;
+ background-image: url('Portret\ 1.png');
+ background-size: contain;
+ background-repeat: no-repeat;
+ width: 50%;
+ height: 40%;
+ left: 5%;
+ z-index:1;
+ transition: .5s;
+}
+.art2 {
+    position: absolute;
+   width: 60%;
+   top: 50%;
+   background-size: contain;
+   background-repeat: no-repeat;
+    height: 45%;
+    background-image: url('Jaguar\ Psycho.png');
+    transition: .5s;
+    z-index:1;
+}
+.art3 {
+    position: absolute;
+   width: 55%;
+   top: 30%;
+   left: 40%;
+   background-size: contain;
+   background-repeat: no-repeat;
+    height: 50%;
+    background-image: url('Portret\ 2.png');
+    transition: .5s;
+    z-index:1;
+}
+.text1 {
+    color: darkgrey;
+    border-left: 2px solid darkgrey;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 25px;
+    height: 60%;
+    width: 30%;
+    font-size: 2em;
+}
+.text1 h4 {
+    font-size: 3em;
+}
+.art1:hover {
+    transform: scale(1.3);
+    z-index:2;
+}
+.art2:hover {
+    transform: scale(1.2);
+    z-index:2;
+}
+.art3:hover {
+        transform: scale(1.1);
+        z-index:2;
+
+
+
+
+
+
+}
+.marvel {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(253, 253, 253);
+    width: 100%;
+    height: 800px;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+.marvelGallery {
+    display: flex;
+    position:relative;
+    overflow: hidden;
+    justify-content: space-around;
+    width: 90%;
+    height: 55%;
+}
+.mar1, .mar2, .mar3, .mar4 {
+    width: 20%;
+    height: 50%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: .5s;
+}
+.mar1 {
+    background-image: url('Arc\ Reactor_Easy-Resize.com.jpg');
+}
+.mar2 {
+    background-image: url('Mjolnir.png');
+}
+.mar3 {
+    background-image: url('CaptainShield_Easy-Resize.com.jpg');
+}
+.mar4 {
+    background-image: url('War\ Machine_Easy-Resize.com.jpg');
+}
+.text2 {
+    font-size: 2em;
+    padding: 40px;
+    border-top: 3px solid rgb(36, 36, 36);
+}
+.mar1:hover, .mar2:hover, .mar3:hover , .mar4:hover {
+    transform: scale(1.2);
+}
+.mar1:hover~ .p1,
+.mar2:hover~ .p2,
+.mar3:hover~ .p3,
+.mar4:hover~ .p4{
+    opacity: 1;
+}
+
+p {
+    position: absolute;
+    font-size: 2em;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+
+
+
+
+footer {
+    display: flex;
+    background-color:#1b1818;
+    height: 620px;
+    color: darkgrey;
+}
+
+.dramat {
+    background-color: white;
+    opacity: .3;
+    z-index: 1;
+
+
+}
+.orange {
+    color: rgb(235, 160, 0);
+    text-shadow: 1px 3px 2px rgb(0, 0, 0);
+    z-index:5;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+ 
+
+}
+.text4 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  
+
+
+}
+.text4 h2 {
+    font-size: 3em;
+}
+
+
+
+input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical 
+  }
+  
+  
+  input[type=submit] {
+    background-color: #fcfcfc;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+ 
+  input[type=submit]:hover {
+    background-color: #ffffff;
+  }
+  
+ 
+  .container {
+    border-radius: 5px;
+    background-color: #1b1818;
+    padding: 20px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1600px) {
+    .img1 {
+        max-width:fit-content;
+        max-height: fit-content;
+    }
+    nav {
+        width: 25%;
+        left: -45%;
+    }
+    .text1 {
+        font-size: 1em;
+    }
+}
+@media (max-width: 1200px) {
+    .icon-menu {
+        left: 90%;
+    }
+    footer {
+        flex-direction: column;
+        height: 1050px;
+    }
+    .text4 {
+        width: 80%;
+    }
+}
+
+
+
+
+@media (max-width: 850px) {
+    .startButton {
+        top: 45%;
+        width:40%;
+    }
+    .img1 {
+        max-width:fit-content;
+        max-height: fit-content;
+    }
+    .icon-menu {
+        font-size: 2em;
+        left: 85%;
+    }
+    h2 {
+        font-size: 3em;
+        left: 40%;
+    }
+    nav {
+        left: -60%;
+        width: 60%;
+    }
+    li {
+        font-size: 1em;
+        margin-top: 4em;
+
+    }
+    ul {
+        justify-content: flex-start;
+        
+    }
+    .infoDivs {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .firstInfo, .secondInfo, .thirdInfo {
+        margin-top: 10px;
+    }
+    main {
+        font-size: 1em;
+        
+    }
+    .portraits {
+        flex-direction: column;
+    }
+    .text1 {
+        font-size: 1em;
+        width: 90%;
+    }
+    .gallery1 {
+        width: 90%;
+    }
+    .art1 {
+        width: 60%;
+        top:5%;
+     
+    }
+    .art2 {
+        width: 90%;
+        height: 50%;
+    }
+    .art3 {
+        width: 70%;
+        height: 50%;
+    }
+    .marvelGallery {
+        height: 80%;
+        flex-direction: column;
+        width:65%;
+     
+    }
+   .text2 {
+       font-size: 1em;
+   }
+    .mar1,.mar2, .mar3, .mar4 {
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    p {
+        font-size: .6em;
+        top: 90%;
+    }
+}
